@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+    img{
+        height: 3rem;
+        width: 10rem;
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        gap: 2rem;
+        color: white;
+        
+        li{
+            cursor: pointer;
+
+            &:hover{
+                color: var(--orange);
+            }
+        }
+    }
+}
