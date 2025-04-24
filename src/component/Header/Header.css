@@ -15,10 +15,40 @@
         
         li{
             cursor: pointer;
-
             &:hover{
                 color: var(--orange);
             }
+        }
+    }
+
+    #bars{
+        background-color: var(--appColor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        position: fixed;
+        right: 2rem;
+        z-index: 100;
+
+
+        img{
+            width: 1.5rem;
+            height: 1.5rem;
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        ul{
+            position: fixed;
+            right: 2rem;
+            z-index: 69;
+            flex-direction: column;
+            background-color: var(--appColor);
+            padding: 2rem;
+            
         }
     }
 }
